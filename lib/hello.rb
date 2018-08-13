@@ -1,10 +1,12 @@
-# Default is "World"
 # Author: Nathan Oliphant (nathan@oliphantparts.org)
 require 'greeter'
+
+# Default is "World"
+name = ARGV.first || "World"
 
 greeter = Greeter.new(name)
 puts greeter.greet
 
-#name = ARGV.first || "World"
+
 
 #puts "Hello, #{name}!"
